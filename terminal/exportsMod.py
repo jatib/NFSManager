@@ -5,7 +5,7 @@ data = trunk(file)
 structured = structureData(data[0])
 iPs = ipData(structured)
 
-def flujo(fin=False):
+def mainHook(fin=False):
     if fin == False:
         print("Selecciona una de las siguientes opciones:\n1) Reemplazar ip\n2)Eliminar ip\n3)Añadir ip\n4)Visualizar dependencias según ip\n5)Visualizar dependencias según carpetas\n\n")
 
@@ -20,5 +20,6 @@ def flujo(fin=False):
                     print(iPs.index(query))
                 else:
                     print("La ip señalada no existe")
-        flujo()
-flujo()
+        mainHook()
+
+mainHook()
